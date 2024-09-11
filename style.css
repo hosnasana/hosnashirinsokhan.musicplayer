@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("https://i.imgur.com/LFUOfxQ.jpeg");
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(18px);
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+}
+
+.container {
+  padding-top: 70px;
+}
+.glass-bg {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  align-items: center;
+  color: white;
+  height: auto;
+  border-style: groove;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.album-cover {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.player-header {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.song-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.artist-name {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.progress-section {
+  margin: 20px 0;
+}
+
+.progress-section input {
+  width: 100%;
+}
+
+.controls button {
+  font-size: 30px;
+  color: white;
+  background: transparent;
+  border: none;
+}
+
+.controls button:hover {
+  color: #ccc;
+}
+
+@media (min-width: 576px) {
+  .glass-bg {
+    width: 400px;
+  }
+  .controls {
+    justify-content: space-evenly;
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .glass-bg {
+    width: 400px;
+  }
+}
+
+.controls-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.controls-line {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjusts spacing between icons */
+  margin-top: 10px;
+}
+
+.control-btn {
+  font-size: 24px;
+  color: white;
+  background: transparent;
+  border: none;
+  padding: 10px 0px 30px 10px;
+}
+
+.control-btn:hover {
+  color: #ccc;
+}
+
+.play-btn {
+  font-size: 28px; /* Make the play button slightly larger */
+}
+
+@media (max-width: 576px) {
+  .controls-line {
+    gap: 15px; /* Reduce spacing on mobile */
+  }
+
+  .control-btn {
+    font-size: 20px; /* Adjust size for mobile */
+  }
+
+  .play-btn {
+    font-size: 24px; /* Adjust play button size for mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .controls-line {
+    gap: 15px; /* Reduce spacing on mobile */
+  }
+
+  .control-btn {
+    font-size: 20px; /* Adjust size for mobile */
+  }
+
+  .play-btn {
+    font-size: 24px; /* Adjust play button size for mobile */
+  }
+}
+
+@media (min-width: 992px) {
+  .controls-line {
+    gap: 15px; /* Reduce spacing on mobile */
+  }
+
+  .control-btn {
+    font-size: 20px; /* Adjust size for mobile */
+  }
+
+  .play-btn {
+    font-size: 24px; /* Adjust play button size for mobile */
+  }
+}
